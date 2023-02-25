@@ -17,12 +17,12 @@ Slam:
 3.Save the map 'ros2 run nav2_map_server map_saver -f ~/map'
 
 Navigation:
-M1:
-1.References :"https://unity-ros2.readthedocs.io/en/latest/turtlebot3-navigation2.html"
-M2:
-1.ros2 launch turtlebot3_navigation2 navigation2.launch.py map_file:=$HOME/map.yaml
 
-2.Use the package turtlebot3_unity_bringup under /docker/turtlebot3_navigation
+1.References :"https://unity-ros2.readthedocs.io/en/latest/turtlebot3-navigation2.html"
+
+2.ros2 launch turtlebot3_navigation2 navigation2.launch.py map_file:=$HOME/map.yaml
+
+3.Use the package turtlebot3_unity_bringup under /docker/turtlebot3_navigation
   (ros2 launch turtlebot3_unity_bringup nav2_bringup_launch.py base_scan:=scan)
   
-3.You can click the botton 'Navigation2 Goal' in Rviz2 to send some navigation goals to the robot.
+4.You can click the botton 'Navigation2 Goal' in Rviz2 to send some navigation goals to the robot.
