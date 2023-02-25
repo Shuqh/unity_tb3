@@ -7,17 +7,17 @@ This repository references the project of "https://github.com/DynoRobotics/Unity
 You are able to control the turtlebot3_burger by keyborad or use the package: turtlebot3_teleop to send /cmd_vel command (this package can be downloaded in "https://github.com/ROBOTIS-GIT/turtlebot3")
 In addition you can also use the scene for slam and navigation.
    
-   Slam: 1.Launch turtlebot3_fake_node.launch.py  (base_scan:=scan)
+Slam: 1.Launch turtlebot3_fake_node.launch.py  (base_scan:=scan)
           
-          2.launch slam_gmapping.launch.py           /https://github.com/Project-MANAS/slam_gmapping  && use_sim_time=true/
+      2.launch slam_gmapping.launch.py           /https://github.com/Project-MANAS/slam_gmapping  && use_sim_time=true/
          
-          3.Save the map 'ros2 run nav2_map_server map_saver -f ~/map'
-    Navigation:
-          1.References :"https://unity-ros2.readthedocs.io/en/latest/turtlebot3-navigation2.html"
+      3.Save the map 'ros2 run nav2_map_server map_saver -f ~/map'
+Navigation:
+      1.References :"https://unity-ros2.readthedocs.io/en/latest/turtlebot3-navigation2.html"
           or
-          2.ros2 launch turtlebot3_navigation2 navigation2.launch.py map_file:=$HOME/map.yaml
+      2.ros2 launch turtlebot3_navigation2 navigation2.launch.py map_file:=$HOME/map.yaml
           
-          3.Use the package turtlebot3_unity_bringup under /docker/turtlebot3_navigation
-            (ros2 launch turtlebot3_unity_bringup nav2_bringup_launch.py base_scan:=scan)
+      3.Use the package turtlebot3_unity_bringup under /docker/turtlebot3_navigation
+        (ros2 launch turtlebot3_unity_bringup nav2_bringup_launch.py base_scan:=scan)
          
-          4.You can click the botton 'Navigation2 Goal' in Rviz2 to send some navigation goals to the robot.
+      4.You can click the botton 'Navigation2 Goal' in Rviz2 to send some navigation goals to the robot.
