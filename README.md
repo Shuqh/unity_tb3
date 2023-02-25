@@ -2,8 +2,11 @@
 This repository references the project of "https://github.com/DynoRobotics/UnityRos2" and provides a detailed tutorial on how to use it.
 
 1.You can navigate to /Assets and run 'python3 start_editor.py' to start unity3d.
+
 2.Go to  /Assets/Scenes in the Project window and double click on the Turtlebot3NavigationDemo.
+
 3.Press the Play button to start the simulation.
+
 You are able to control the turtlebot3_burger by keyborad or use the package: turtlebot3_teleop to send /cmd_vel command (this package can be downloaded in "https://github.com/ROBOTIS-GIT/turtlebot3")
 
 In addition you can also use the scene for slam and navigation.
